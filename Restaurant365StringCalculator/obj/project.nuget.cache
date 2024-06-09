@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "WuJc55d0OjZO3cyg+bC1Wz3t1dBa1FZ3eXuMC4IM1JQu1G/aR3uMMsPxsB7jPCBPxjozJmI4tt/SRAtFmQ/NNw==",
+  "dgSpecHash": "sspIEhcN8ReuaUPUxX3W8ou3U1oyseXnvWuJ4byy2PQT5FZHpObnrxc/zB1OcoZhoVJepQsmqyrAYhKtifMiMA==",
   "success": true,
   "projectFilePath": "C:\\Code\\Restaurant365StringCalculator\\Restaurant365StringCalculator\\Restaurant365StringCalculator.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ty746\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\ty746\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

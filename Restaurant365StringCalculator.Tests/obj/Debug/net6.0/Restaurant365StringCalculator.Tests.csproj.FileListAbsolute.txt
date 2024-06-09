@@ -97,3 +97,6 @@ C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Tests\obj\De
 C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Tests\obj\Debug\net6.0\Restaurant365StringCalculator.Tests.pdb
 C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Tests\obj\Debug\net6.0\Restaurant365StringCalculator.Tests.genruntimeconfig.cache
 C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Tests\obj\Debug\net6.0\ref\Restaurant365StringCalculator.Tests.dll
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Tests\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Tests\bin\Debug\net6.0\Restaurant365StringCalculator.Logic.dll
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Tests\bin\Debug\net6.0\Restaurant365StringCalculator.Logic.pdb

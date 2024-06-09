@@ -12,3 +12,9 @@ C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator\obj\Debug\ne
 C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator\obj\Debug\net6.0\Restaurant365StringCalculator.pdb
 C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator\obj\Debug\net6.0\Restaurant365StringCalculator.genruntimeconfig.cache
 C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator\obj\Debug\net6.0\ref\Restaurant365StringCalculator.dll
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator\bin\Debug\net6.0\Restaurant365StringCalculator.Logic.dll
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator\bin\Debug\net6.0\Restaurant365StringCalculator.Logic.pdb
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator\obj\Debug\net6.0\Restaurant365StringCalculator.csproj.AssemblyReference.cache
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator\obj\Debug\net6.0\Restaurant365StringCalculator.csproj.CopyComplete

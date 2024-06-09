@@ -1,0 +1,11 @@
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Logic\bin\Debug\net6.0\Restaurant365StringCalculator.Logic.deps.json
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Logic\bin\Debug\net6.0\Restaurant365StringCalculator.Logic.dll
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Logic\bin\Debug\net6.0\Restaurant365StringCalculator.Logic.pdb
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Logic\obj\Debug\net6.0\Restaurant365StringCalculator.Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Logic\obj\Debug\net6.0\Restaurant365StringCalculator.Logic.AssemblyInfoInputs.cache
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Logic\obj\Debug\net6.0\Restaurant365StringCalculator.Logic.AssemblyInfo.cs
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Logic\obj\Debug\net6.0\Restaurant365StringCalculator.Logic.csproj.CoreCompileInputs.cache
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Logic\obj\Debug\net6.0\Restaurant365StringCalculator.Logic.dll
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Logic\obj\Debug\net6.0\refint\Restaurant365StringCalculator.Logic.dll
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Logic\obj\Debug\net6.0\Restaurant365StringCalculator.Logic.pdb
+C:\Code\Restaurant365StringCalculator\Restaurant365StringCalculator.Logic\obj\Debug\net6.0\ref\Restaurant365StringCalculator.Logic.dll

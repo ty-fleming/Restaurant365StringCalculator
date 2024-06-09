@@ -381,6 +381,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Restaurant365StringCalculator.Logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Restaurant365StringCalculator.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Restaurant365StringCalculator.Logic.dll": {}
+        }
       }
     }
   },
@@ -975,6 +985,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Restaurant365StringCalculator.Logic/1.0.0": {
+      "type": "project",
+      "path": "../Restaurant365StringCalculator.Logic/Restaurant365StringCalculator.Logic.csproj",
+      "msbuildProject": "../Restaurant365StringCalculator.Logic/Restaurant365StringCalculator.Logic.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -983,6 +998,7 @@
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
       "NUnit3TestAdapter >= 4.4.2",
+      "Restaurant365StringCalculator.Logic >= 1.0.0",
       "coverlet.collector >= 3.2.0"
     ]
   },
@@ -1020,7 +1036,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Code\\Restaurant365StringCalculator\\Restaurant365StringCalculator.Logic\\Restaurant365StringCalculator.Logic.csproj": {
+              "projectPath": "C:\\Code\\Restaurant365StringCalculator\\Restaurant365StringCalculator.Logic\\Restaurant365StringCalculator.Logic.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
