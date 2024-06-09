@@ -6,7 +6,7 @@ namespace Restaurant365StringCalculator.Logic
     public class StringCalculator : IStringCalculator
     {
         private readonly string[] _newLineDelimiters = { "\\n", "\n" };
-        private readonly string[] _defaultDelimiters = new string[]{};
+        private readonly string[] _defaultDelimiters;
 
         public StringCalculator()
         {
@@ -21,7 +21,7 @@ namespace Restaurant365StringCalculator.Logic
             }
 
             var delimiters = _defaultDelimiters.ToList();
-            if (TryParseCustomDelimiterTemplate(formattedNumber, out string customDelimiter))
+            if (TryParseCustomDelimiterTemplate(formattedNumber, out var customDelimiter))
             { 
                 delimiters.Add(customDelimiter!);
             }
@@ -55,7 +55,7 @@ namespace Restaurant365StringCalculator.Logic
 
         private static bool TryParseCustomDelimiterTemplate(string input, out string delimiter)
         {
-            delimiter = null!;
+            delimiter = null;
 
             // Validate the custom delimiter template structure
             if (string.IsNullOrWhiteSpace(input) || !input.StartsWith("//"))
@@ -73,17 +73,20 @@ namespace Restaurant365StringCalculator.Logic
 
             var newLineIndex = singleNewlineIndex != -1 ? singleNewlineIndex : doubleBackslashNewlineIndex;
 
-            // Get the delimiter
-            delimiter = input.Substring(2, newLineIndex - 2);
+            // Get the delimiter section
+            var delimiterSection = input.Substring(2, newLineIndex - 2);
 
-            // Validate
-            if (string.IsNullOrEmpty(delimiter))
+            if (delimiterSection.StartsWith("[") && delimiterSection.EndsWith("]"))
             {
-                delimiter = null!;
-                return false;
+                // Grab the entire delimiter section
+                delimiter = delimiterSection.Substring(1, delimiterSection.Length - 2);
+            }
+            else
+            {
+                delimiter = delimiterSection;
             }
 
-            return true;
+            return !string.IsNullOrEmpty(delimiter);
         }
     }
 }
