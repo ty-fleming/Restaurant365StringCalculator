@@ -42,7 +42,6 @@ namespace Restaurant365StringCalculator
             {
                 Console.WriteLine($"An unexpected error occurred: {ex.Message}");
             }
-
         }
     }
 }
