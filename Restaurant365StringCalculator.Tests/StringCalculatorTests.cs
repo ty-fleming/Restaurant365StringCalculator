@@ -18,9 +18,17 @@ namespace Restaurant365StringCalculator.Tests
         [TestCase("20", ExpectedResult = 20)]
         [TestCase("1,5000", ExpectedResult = 5001)]
         [TestCase("1\n2,3", ExpectedResult = 6)]
-        public int Add_ValidNumbers_ReturnsSum(string input)
+        [TestCase("1\\n2,3", ExpectedResult = 6)]
+        public int AddNumbers_Success(string input)
         {
             return _calculator.Add(input);
+        }
+
+        [Test]
+        public void AddNumbers_IncludesNegative_ThrowsException()
+        {
+            var exception = Assert.Throws<Exception>(() => _calculator.Add("130,-32387"));
+            Assert.That(exception.Message, Is.EqualTo("Negative numbers are not allowed in the input. Please remove all negative numbers and try again. -32387"));
         }
     }
 }

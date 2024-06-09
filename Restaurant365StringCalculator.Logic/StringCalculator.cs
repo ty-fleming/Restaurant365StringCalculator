@@ -13,8 +13,14 @@ namespace Restaurant365StringCalculator.Logic
 
             var numbers = formattedNumber.Split(_delimiters, StringSplitOptions.None).Select(n =>
             {
-                return int.TryParse(n, out var num) ? num : 0;
+                return int.TryParse(n, out var number) ? number : 0;
             }).ToList();
+
+            var negativeNumbers = numbers.Where(n => n < 0).ToList();
+            if (negativeNumbers.Any())
+            {
+                throw new Exception("Negative numbers are not allowed in the input. Please remove all negative numbers and try again. " + string.Join(", ", negativeNumbers));
+            }
             
             return numbers.Sum();
         }
