@@ -23,7 +23,7 @@ namespace Restaurant365StringCalculator.Logic
             var delimiters = _defaultDelimiters.ToList();
             if (TryParseCustomDelimiterTemplate(formattedNumber, out var customDelimiter))
             { 
-                delimiters.Add(customDelimiter!);
+                delimiters.AddRange(customDelimiter!);
             }
 
             var numbers = formattedNumber.Split(delimiters.ToArray(), StringSplitOptions.None).Select(GetNumberFromString).ToList();
@@ -53,9 +53,9 @@ namespace Restaurant365StringCalculator.Logic
             return numberToValidate > 1000;
         }
 
-        private static bool TryParseCustomDelimiterTemplate(string input, out string delimiter)
+        private static bool TryParseCustomDelimiterTemplate(string input, out List<string> delimiters)
         {
-            delimiter = null;
+            delimiters = new List<string>();
 
             // Validate the custom delimiter template structure
             if (string.IsNullOrWhiteSpace(input) || !input.StartsWith("//"))
@@ -78,15 +78,28 @@ namespace Restaurant365StringCalculator.Logic
 
             if (delimiterSection.StartsWith("[") && delimiterSection.EndsWith("]"))
             {
-                // Grab the entire delimiter section
-                delimiter = delimiterSection.Substring(1, delimiterSection.Length - 2);
+                delimiterSection = delimiterSection.Substring(1, delimiterSection.Length - 2);
+                
+                // Split for multiple custom delimiters
+                var delimiterArray = delimiterSection.Split(new[] { "][" }, StringSplitOptions.None);
+
+                foreach (var delimiter in delimiterArray)
+                {
+                    // Validate
+                    if (string.IsNullOrEmpty(delimiter))
+                    {
+                        delimiters = null!;
+                        return false;
+                    }
+                    delimiters.Add(delimiter);
+                }
             }
             else
             {
-                delimiter = delimiterSection;
+                delimiters.Add(delimiterSection);
             }
 
-            return !string.IsNullOrEmpty(delimiter);
+            return true;
         }
     }
 }

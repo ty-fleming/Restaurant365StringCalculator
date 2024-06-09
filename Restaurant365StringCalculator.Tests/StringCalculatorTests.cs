@@ -21,6 +21,7 @@ namespace Restaurant365StringCalculator.Tests
         [TestCase("//#\n2#5", ExpectedResult = 7)]
         [TestCase("//,\\n2,ff,100", ExpectedResult = 102)]
         [TestCase("//[***]\\n11***22***33", ExpectedResult = 66)]
+        [TestCase("//[*][!!][r9r]\\n11r9r22*hh*33!!44", ExpectedResult = 110)]
         public int AddNumbers_Success(string input)
         {
             return _calculator.Add(input);
