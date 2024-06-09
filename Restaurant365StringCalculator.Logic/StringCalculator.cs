@@ -11,18 +11,31 @@ namespace Restaurant365StringCalculator.Logic
         {
             if (string.IsNullOrWhiteSpace(formattedNumber)) return 0;
 
-            var numbers = formattedNumber.Split(_delimiters, StringSplitOptions.None).Select(n =>
-            {
-                return int.TryParse(n, out var number) ? number : 0;
-            }).ToList();
+            var numbers = formattedNumber.Split(_delimiters, StringSplitOptions.None).Select(GetNumberFromString).ToList();
 
             var negativeNumbers = numbers.Where(n => n < 0).ToList();
             if (negativeNumbers.Any())
             {
-                throw new Exception("Negative numbers are not allowed in the input. Please remove all negative numbers and try again. " + string.Join(", ", negativeNumbers));
+                throw new Exception(
+                    $"Negative numbers are not allowed in the input. Please remove all negative numbers and try again. {string.Join(", ", negativeNumbers)}");
             }
             
             return numbers.Sum();
+        }
+
+        private int GetNumberFromString(string numberToParse)
+        {
+            if (int.TryParse(numberToParse, out var number) && !IsInvalidNumber(number))
+            {
+                return number;
+            }
+
+            return 0;
+        }
+
+        private bool IsInvalidNumber(int numberToValidate)
+        {
+            return numberToValidate > 1000;
         }
     }
 }
