@@ -5,7 +5,6 @@ namespace Restaurant365StringCalculator.Tests
 {
     public class StringCalculatorTests
     {
-
         private IStringCalculator _calculator;
 
         [SetUp]
@@ -14,17 +13,16 @@ namespace Restaurant365StringCalculator.Tests
             _calculator = new StringCalculator();
         }
         
-        
         [Test]
-        public void Add_TwoNumbers_ReturnsSum()
+        public void Add_TwoNumbers()
         {
             Assert.That(_calculator.Add("1,5000"), Is.EqualTo(5001));
         }
 
         [Test]
-        public void Add_MoreThanTwoNumbers_ThrowsException()
+        public void Add_MoreThanTwoNumbers()
         {
-            Assert.Throws<Exception>(() => _calculator.Add("1,2,3"));
+            Assert.That(_calculator.Add("1,2,3,4,5,6,7,8,9,10,11,12"), Is.EqualTo(78));
         }
     }
 }

@@ -18,7 +18,7 @@ namespace Restaurant365StringCalculator
             {
                 while (true)
                 {
-                    Console.Write("Enter numbers (Ctrl + C or type 'exit' to quit): ");
+                    Console.Write("Enter numbers (type 'exit' to quit or press Ctrl+C): ");
                     var formattedStringInput = Console.ReadLine();
 
                     if (!string.IsNullOrEmpty(formattedStringInput))
