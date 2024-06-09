@@ -1,6 +1,6 @@
-# Restaurant365 Code Challenge - String Calculator
+# Tyler Fleming - Restaurant365 Code Challenge
 
-## Summary
+##  String Calculator C# Console App
 
 Create a calculator that only supports an Add operation given a single formatted string.
 
